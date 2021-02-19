@@ -1,0 +1,60 @@
+    .item1 { grid-area: header; border-radius: 60px;}
+    .item2 { grid-area: ac; border-radius: 60px; }
+    .item3 { grid-area: mm; border-radius: 60px; }
+    .item4 { grid-area: per; border-radius: 60px; }
+    .item5 { grid-area: div; border-radius: 60px; }
+    .item6 { grid-area: seven; border-radius: 60px; }
+    .item7 { grid-area: eith; border-radius: 60px; }
+    .item8 { grid-area: none; border-radius: 60px; }
+    .item9 { grid-area: mult; border-radius: 60px; }
+    .item10 { grid-area: four; border-radius: 60px; }
+    .item11 { grid-area: five; border-radius: 60px; }
+    .item12 { grid-area: six; border-radius: 60px; }
+    .item13 { grid-area: sub; border-radius: 60px; }
+    .item14 { grid-area: one; border-radius: 60px; }
+    .item15 { grid-area: two; border-radius: 60px; }
+    .item16 { grid-area: three; border-radius: 60px; }
+    .item17 { grid-area: sum; border-radius: 60px; }
+    .item18 { grid-area: zero; border-radius: 60px; }
+    .item19 { grid-area: vir; border-radius: 60px; }
+    .item20 { grid-area: igual; border-radius: 60px; }
+   
+    .page-container {
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header'
+        'ac mm per div'
+        'seven eith none mult'
+        'four five six sub'
+        'one two three sum'
+        'zero zero vir igual';
+      grid-gap: 5px;
+      background-color: #161616;
+      padding: 10px;
+      border-radius: 10px; 
+    }
+    
+    .grid-container > div {
+      background-color: rgba(49, 49, 49, 0.8);
+      text-align: center;
+      padding: 25px 0;
+      color: aliceblue;
+    }
+    #maisMenos {
+        font-size: 10px;
+      }
+    #output{
+      background-color: #1f1f1c;
+    }
+    #laranja{
+      background-color: #d35704;
+    }
+    #cinzaClaro{
+      background-color: #757575;
+    }
+  
