@@ -1,3 +1,4 @@
+// código de teste de implementação das operações na calculadora
 let displayTest = ""
 let numOne 
 let numTwo
