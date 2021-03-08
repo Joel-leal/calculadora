@@ -58,4 +58,36 @@
     #cinzaClaro{
       background-color: #757575;
     }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      font-family: 'Courier New', Courier, monospace;
+      display: block;
+      color: rgb(158, 199, 201);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
   
+    #home{
+        background-color: darkmagenta;
+        color:rgb(34, 29, 33);
+    }
+    #home:hover {
+        background-color: rgb(139, 60, 139);
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
