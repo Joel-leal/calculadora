@@ -80,14 +80,16 @@
     }
   
     #home{
-        background-color: darkmagenta;
-        color:rgb(34, 29, 33);
+        background-color: rgb(136, 83, 136);
+        color:#d8cac7;
     }
     #home:hover {
-        background-color: rgb(139, 60, 139);
+        background-color: rgb(105, 76, 105);
+        color: #dbb4ad;
     }
     
     /* Change the link color to #111 (black) on hover */
     li a:hover {
       background-color: #111;
+      color:rgb(170, 209, 243);
     }
