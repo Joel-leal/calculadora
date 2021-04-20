@@ -23,7 +23,11 @@
         onkeyup="handleChange()"
         id="input"
       />
-      <select class="form-select"></select>
+      <selects
+        class="form-select"
+        onchange="handleChange()"
+        id="select-input"
+      ></selects>
     </div>
     <div class="input-group mb-3 w-50 p-3">
       <input
@@ -34,59 +38,53 @@
         id="output"
         disabled
       />
-      <select class="form-select"></select>
+      <select
+        class="form-select"
+        onchange="handleChange()"
+        id="select-output"
+      ></select>
     </div>
   </body>
-
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/9.0.0/decimal.min.js"
+    integrity="sha512-zPQm8HS4Phjo9pUbbk+HPH3rSWu5H03NFvBpPf6D9EU2xasj0ZxhYAc/lvv/HVDWMSE1Autj19i6nZOfiVQbFQ=="
+    crossorigin="anonymous"
+  ></script>
   <script type="text/javascript">
-    // const listaMedidas = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
-    // const selectElements = Array.from(
-    //   document.getElementsByClassName("form-select")
-    // ); //Array.from pega os elementos como de uma lista
-    // listaMedidas.map((item) => {
-    //   console.log(item);
-    //   // selectElements.innerHTML += `<option value="1">${item}</option>`;
-    //   selectElements.map((element) => {
-    //     element.innerHTML += `<option value="1">${item}</option>`;
-    //   });
-    // });
-    function conversion(valueSelect, valueOutput) {
-      if (valueSelect == "km") {
-        let result = valueOutput * 1000;
-        console.log(result);
-      }
-      if (valueSelect == "hm") {
-        let result = valueOutput * 100;
-        console.log(result);
-      }
-      if (valueSelect == "dam") {
-        let result = valueOutput * 10;
-        console.log(result);
-      }
-      if (valueSelect == "m") {
-        let result = valueOutput;
-        console.log(result);
-      }
-      if (valueSelect == "dm") {
-        let result = valueOutput / 10;
-        console.log(result);
-      }
-      if (valueSelect == "cm") {
-        let result = valueOutput / 100;
-        console.log(result);
-      }
-      if (valueSelect == "mm") {
-        let result = valueOutput / 1000;
-        console.log(result);
-      }
-    }
-
+    const listaMedidas = [
+      { text: "km", value: 0.1 },
+      { text: "hm", value: 0.01 },
+      { text: "dam", value: 0.001 },
+      { text: "m", value: 0.0001 },
+      { text: "dm", value: 0.00001 },
+      { text: "cm", value: 0.000001 },
+      { text: "mm", value: 0.0000001 },
+    ];
+    const selectElements = Array.from(
+      document.getElementsByClassName("form-select")
+    ); //Array.from pega os elementos como de uma lista
+    listaMedidas.map((item) => {
+      console.log(item);
+      // selectElements.innerHTML += `<option value="1">${item}</option>`;
+      selectElements.map((element) => {
+        element.innerHTML += `<option value="${item.value}">${item.text}</option>`;
+      });
+    });
     function handleChange() {
-      let distance = document.getElementsByClassName("form-select");
-      let distanceValue = document.getElementById("input");
-      conversion(distance, distanceValue);
-      let output = z;
-      document.getElementById("output").innerHTML = output;
+      let outputElement = document.getElementById("output");
+      let inputValue = new Decimal(
+        document.getElementById("input").value.replace(",", ".")
+      );
+      let selectInput = new Decimal(
+        document.getElementById("select-input").value
+      );
+      let selectOutput = new Decimal(
+        document.getElementById("select-output").value
+      );
+      console.log(selectInput, selectOutput, inputValue);
+
+      let result = inputValue.times(selectInput.div(selectOutput));
+      outputElement.value = result;
     }
   </script>
   <script
