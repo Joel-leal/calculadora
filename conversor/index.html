@@ -39,21 +39,54 @@
   </body>
 
   <script type="text/javascript">
-    const listaMedidas = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
-    const selectElements = Array.from(
-      document.getElementsByClassName("form-select")
-    );
-    listaMedidas.map((item) => {
-      console.log(item);
-      // selectElements.innerHTML += `<option value="1">${item}</option>`;
-      selectElements.map((element) => {
-        element.innerHTML += `<option value="1">${item}</option>`;
-      });
-    });
+    // const listaMedidas = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
+    // const selectElements = Array.from(
+    //   document.getElementsByClassName("form-select")
+    // ); //Array.from pega os elementos como de uma lista
+    // listaMedidas.map((item) => {
+    //   console.log(item);
+    //   // selectElements.innerHTML += `<option value="1">${item}</option>`;
+    //   selectElements.map((element) => {
+    //     element.innerHTML += `<option value="1">${item}</option>`;
+    //   });
+    // });
+    function conversion(valueSelect, valueOutput) {
+      if (valueSelect == "km") {
+        let result = valueOutput * 1000;
+        console.log(result);
+      }
+      if (valueSelect == "hm") {
+        let result = valueOutput * 100;
+        console.log(result);
+      }
+      if (valueSelect == "dam") {
+        let result = valueOutput * 10;
+        console.log(result);
+      }
+      if (valueSelect == "m") {
+        let result = valueOutput;
+        console.log(result);
+      }
+      if (valueSelect == "dm") {
+        let result = valueOutput / 10;
+        console.log(result);
+      }
+      if (valueSelect == "cm") {
+        let result = valueOutput / 100;
+        console.log(result);
+      }
+      if (valueSelect == "mm") {
+        let result = valueOutput / 1000;
+        console.log(result);
+      }
+    }
+
     function handleChange() {
-      let input = document.getElementById("input");
-      let output = document.getElementById("output");
-      output.value = input.value;
+      let distance = document.getElementsByClassName("form-select");
+      let distanceValue = document.getElementById("input");
+      conversion(distance, distanceValue);
+      let output = z;
+      document.getElementById("output").innerHTML = output;
     }
   </script>
   <script
