@@ -1,6 +1,12 @@
-.container {
+.container01 {
   display: flex;
   align-items: center;
   background-color: brown;
   padding: 10%;
+}
+.navbar {
+  height: 65px;
+}
+img {
+  margin-top: -10px;
 }
