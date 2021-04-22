@@ -1,106 +1,157 @@
-    /* Folha de estilo código da página calcTest*/
-    .item1 { grid-area: header; border-radius: 60px;}
-    .item2 { grid-area: ac; border-radius: 60px; }
-    .item3 { grid-area: mm; border-radius: 60px; }
-    .item4 { grid-area: per; border-radius: 60px; }
-    .item5 { grid-area: div; border-radius: 60px; }
-    .item6 { grid-area: seven; border-radius: 60px; }
-    .item7 { grid-area: eith; border-radius: 60px; }
-    .item8 { grid-area: none; border-radius: 60px; }
-    .item9 { grid-area: mult; border-radius: 60px; }
-    .item10 { grid-area: four; border-radius: 60px; }
-    .item11 { grid-area: five; border-radius: 60px; }
-    .item12 { grid-area: six; border-radius: 60px; }
-    .item13 { grid-area: sub; border-radius: 60px; }
-    .item14 { grid-area: one; border-radius: 60px; }
-    .item15 { grid-area: two; border-radius: 60px; }
-    .item16 { grid-area: three; border-radius: 60px; }
-    .item17 { grid-area: sum; border-radius: 60px; }
-    .item18 { grid-area: zero; border-radius: 60px; }
-    .item19 { grid-area: vir; border-radius: 60px; }
-    .item20 { grid-area: igual; border-radius: 60px; }
-   
-    .page-container {
-      max-width: 360px;
-      margin: 0 auto;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header header'
-        'ac mm per div'
-        'seven eith none mult'
-        'four five six sub'
-        'one two three sum'
-        'zero zero vir igual';
-      grid-gap: 5px;
-      background-color: #161616;
-      padding: 10px;
-      border-radius: 10px; 
-    }
-    
-    .grid-container > div {
-      background-color: rgba(49, 49, 49, 0.8);
-      text-align: center;
-      padding: 25px 0;
-      color: aliceblue;
-    }
-    #maisMenos {
-        font-size: 10px;
-      }
-    #output{
-      background-color: #1f1f1c;
-    }
-    #laranja{
-      background-color: #d35704;
-    }
-    #cinzaClaro{
-      background-color: #757575;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      font-family: 'Courier New', Courier, monospace;
-      display: block;
-      color: rgb(158, 199, 201);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  
-    #home{
-<<<<<<< HEAD
-        background-color: darkmagenta;
-        color:rgb(34, 29, 33);
-    }
-    #home:hover {
-        background-color: rgb(139, 60, 139);
-=======
-        background-color: rgb(136, 83, 136);
-        color:#d8cac7;
-    }
-    #home:hover {
-        background-color: rgb(105, 76, 105);
-        color: #dbb4ad;
->>>>>>> 3c931a27d7bd087bde516d98869cb6f704221afb
-    }
-    
-    /* Change the link color to #111 (black) on hover */
-    li a:hover {
-      background-color: #111;
-<<<<<<< HEAD
-=======
-      color:rgb(170, 209, 243);
->>>>>>> 3c931a27d7bd087bde516d98869cb6f704221afb
-    }
+/* Folha de estilo código da página calcTest*/
+.item1 {
+  grid-area: header;
+  border-radius: 60px;
+}
+.item2 {
+  grid-area: ac;
+  border-radius: 60px;
+}
+.item3 {
+  grid-area: mm;
+  border-radius: 60px;
+}
+.item4 {
+  grid-area: per;
+  border-radius: 60px;
+}
+.item5 {
+  grid-area: div;
+  border-radius: 60px;
+}
+.item6 {
+  grid-area: seven;
+  border-radius: 60px;
+}
+.item7 {
+  grid-area: eith;
+  border-radius: 60px;
+}
+.item8 {
+  grid-area: none;
+  border-radius: 60px;
+}
+.item9 {
+  grid-area: mult;
+  border-radius: 60px;
+}
+.item10 {
+  grid-area: four;
+  border-radius: 60px;
+}
+.item11 {
+  grid-area: five;
+  border-radius: 60px;
+}
+.item12 {
+  grid-area: six;
+  border-radius: 60px;
+}
+.item13 {
+  grid-area: sub;
+  border-radius: 60px;
+}
+.item14 {
+  grid-area: one;
+  border-radius: 60px;
+}
+.item15 {
+  grid-area: two;
+  border-radius: 60px;
+}
+.item16 {
+  grid-area: three;
+  border-radius: 60px;
+}
+.item17 {
+  grid-area: sum;
+  border-radius: 60px;
+}
+.item18 {
+  grid-area: zero;
+  border-radius: 60px;
+}
+.item19 {
+  grid-area: vir;
+  border-radius: 60px;
+}
+.item20 {
+  grid-area: igual;
+  border-radius: 60px;
+}
+
+.page-container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "ac mm per div"
+    "seven eith none mult"
+    "four five six sub"
+    "one two three sum"
+    "zero zero vir igual";
+  grid-gap: 5px;
+  background-color: #161616;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(49, 49, 49, 0.8);
+  text-align: center;
+  padding: 25px 0;
+  color: aliceblue;
+}
+#maisMenos {
+  font-size: 10px;
+}
+#output {
+  background-color: #1f1f1c;
+}
+#laranja {
+  background-color: #d35704;
+}
+#cinzaClaro {
+  background-color: #757575;
+}
+ul {
+  /* list-style-type: none; */
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  color: rgb(181, 182, 182);
+  text-align: center;
+  padding: 0px 15px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  font-size: 17px;
+  color: aliceblue;
+  padding: 0px;
+}
+
+.navbar {
+  height: 65px;
+}
+img {
+  margin-top: -10px;
+}
