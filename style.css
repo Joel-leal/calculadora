@@ -121,7 +121,7 @@
 }
 ul {
   /* list-style-type: none; */
-  margin: 0px;
+  margin-top: -5px;
   padding: 0px;
   overflow: hidden;
   background-color: #333;
@@ -136,22 +136,21 @@ li a {
   display: block;
   color: rgb(181, 182, 182);
   text-align: center;
-  padding: 0px 15px;
+  padding: 15px 15px;
   margin: 0 auto;
   text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
-  font-size: 17px;
-  color: aliceblue;
-  padding: 0px;
+  background-color: rgb(17, 20, 22);
+  color: rgb(244, 246, 248);
 }
 
 .navbar {
-  height: 65px;
+  height: 60px;
+  justify-content: flex-start;
 }
 img {
-  margin-top: -10px;
+  margin-top: -25px;
 }
