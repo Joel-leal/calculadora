@@ -12,23 +12,23 @@ Para contribuir com o projeto, os colaboradores podem ter conhecimentos iniciais
 
 HTML5 e CSS3:
 
-[Curso em vídeo - HTML5 e CSS3](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
+<a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"> Curso em vídeo - HTML5 e CSS3</a>
 
-[W3 School - HTML5](https://www.w3schools.com/html/)
+<a href="https://www.w3schools.com/html/"> W3 School - HTML5</a>
 
-[W3 School - CSS3](https://www.w3schools.com/css/default.asp)
+<a href="https://www.w3schools.com/css/default.asp"> W3 School - CSS3</a>
 
 JavaScript:
 
-[Curso em vídeo](https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm)
+<a href="https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm"> Curso em vídeo </a>
 
-[DEVMEDIA](https://www.devmedia.com.br/javascript/)
+<a href="https://www.devmedia.com.br/javascript/"> DEVMEDIA </a>
 
-[W3 School](https://www.w3schools.com/js/default.asp)
+<a href="https://www.w3schools.com/js/default.asp"> W3 School </a>
 
 Bootstrap:
 
-[Bootstrap](https://getbootstrap.com/)
+<a href="https://getbootstrap.com/"> Bootstrap </a>
 
 ## Desenvolvimento
 
