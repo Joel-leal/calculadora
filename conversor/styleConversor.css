@@ -33,7 +33,6 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: rgb(17, 20, 22);
   color: rgb(244, 246, 248);
@@ -43,7 +42,6 @@ li a:hover {
   text-align: center;
   padding: 25px;
 }
-
 .navbar {
   height: 60px;
   justify-content: flex-start;
