@@ -4,6 +4,13 @@
   background-color: brown;
   padding: 10%;
 }
+@media (max-width:540px){
+  .container01{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 .navbar {
   height: 65px;
 }
