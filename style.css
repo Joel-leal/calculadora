@@ -119,38 +119,51 @@
 #cinzaClaro {
   background-color: #757575;
 }
-ul {
-  /* list-style-type: none; */
-  margin-top: -5px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  font-family: "Courier New", Courier, monospace;
-  display: block;
-  color: rgb(181, 182, 182);
-  text-align: center;
-  padding: 15px 15px;
-  margin: 0 auto;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: rgb(17, 20, 22);
-  color: rgb(244, 246, 248);
-}
-
 .navbar {
-  height: 60px;
+  height: 50px;
   justify-content: flex-start;
 }
-img {
-  margin-top: -25px;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logo {
+  align-content: flex-start;
+  width: 50px;
+  height: 50px;
+}
+.navbar {
+  /* background-color: rgba(222, 184, 135, 0); */
+  flex-grow: 3;
+}
+li a {
+  list-style-type: none;
+  padding-right: 23px;
+  color: rgb(152, 153, 155);
+  text-decoration: none;
+}
+ul {
+  display: flex;
+}
+li a:hover {
+  color: aliceblue;
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0px 0px;
+  }
+  .navbar {
+    height: 100px;
+    padding-bottom: 0px;
+  }
+  .logo {
+    align-content: flex-start;
+  }
+  li a {
+    padding-right: 23px;
+  }
 }
