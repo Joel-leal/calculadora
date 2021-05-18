@@ -7,13 +7,38 @@ function handleClick(symbol) {
   switch (symbol) {
     case "+":
       numOne = parseFloat(displayTest); // transformando a string em número real
-      displayTest = "0";
+      displayTest = "";
+      operation = symbol;
+      break;
+    case "-":
+      numOne = parseFloat(displayTest); // transformando a string em número real
+      displayTest = "";
+      operation = symbol;
+      break;
+    case "*":
+      numOne = parseFloat(displayTest); // transformando a string em número real
+      displayTest = "";
+      operation = symbol;
+      break;
+    case "/":
+      numOne = parseFloat(displayTest); // transformando a string em número real
+      displayTest = "";
       operation = symbol;
       break;
     case "=":
-      numTwo = parseFloat(displayTest); // transformando a string em número real
-      displayTest = numOne + numTwo;
-      operation = symbol;
+      numTwo = parseFloat(displayTest);
+      if (symbol == "+") {
+        displayTest = numOne + numTwo;
+      }
+      if (symbol == "-") {
+        displayTest = numOne - numTwo;
+      }
+      if (symbol == "/") {
+        displayTest = numOne / numTwo;
+      }
+      if (symbol == "*") {
+        displayTest = numOne * numTwo;
+      }
       break;
     default:
       displayTest += symbol;
@@ -24,6 +49,6 @@ function handleClick(symbol) {
 
 function handleClear() {
   const element = document.getElementById("output");
-  displayTest = "0";
+  displayTest = "";
   element.innerText = displayTest;
 }
