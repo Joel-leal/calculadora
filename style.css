@@ -1,85 +1,72 @@
 /* Folha de estilo código da página calcTest*/
-.item1 {
+.display {
   grid-area: header;
-  border-radius: 60px;
+  border-radius: 20px;
+  height: 80px;
+  background-color: rgb(39, 39, 39);
 }
-.item2 {
+.clear {
   grid-area: ac;
-  border-radius: 60px;
 }
-.item3 {
+.backspace {
   grid-area: mm;
-  border-radius: 60px;
 }
-.item4 {
+.percent {
   grid-area: per;
-  border-radius: 60px;
 }
-.item5 {
+.div {
   grid-area: div;
-  border-radius: 60px;
 }
-.item6 {
+.seven {
   grid-area: seven;
-  border-radius: 60px;
 }
-.item7 {
+.eith {
   grid-area: eith;
-  border-radius: 60px;
 }
-.item8 {
-  grid-area: none;
-  border-radius: 60px;
+.nine {
+  grid-area: nine;
 }
-.item9 {
+.mult {
   grid-area: mult;
-  border-radius: 60px;
 }
-.item10 {
+.four {
   grid-area: four;
-  border-radius: 60px;
 }
-.item11 {
+.five {
   grid-area: five;
-  border-radius: 60px;
 }
-.item12 {
+.six {
   grid-area: six;
-  border-radius: 60px;
 }
-.item13 {
+.sub {
   grid-area: sub;
-  border-radius: 60px;
 }
-.item14 {
+.one {
   grid-area: one;
-  border-radius: 60px;
 }
-.item15 {
+.two {
   grid-area: two;
-  border-radius: 60px;
 }
-.item16 {
+.three {
   grid-area: three;
-  border-radius: 60px;
 }
-.item17 {
+.sum {
   grid-area: sum;
-  border-radius: 60px;
 }
-.item18 {
+.zero {
   grid-area: zero;
-  border-radius: 60px;
 }
-.item19 {
+.vir {
   grid-area: vir;
-  border-radius: 60px;
 }
-.item20 {
-  grid-area: igual;
-  border-radius: 60px;
+.even {
+  grid-area: even;
 }
-
+.number {
+  border-radius: 60px;
+  border-style: none;
+  height: 60px;
+}
 .page-container {
   max-width: 360px;
   margin: 0 auto;
@@ -91,7 +78,7 @@
   grid-template-areas:
     "header header header header"
     "ac mm per div"
-    "seven eith none mult"
+    "seven eith nine mult"
     "four five six sub"
     "one two three sum"
     "zero zero vir igual";
@@ -99,10 +86,10 @@
   background-color: #161616;
   padding: 10px;
   border-radius: 10px;
+  height: auto;
 }
 
 .grid-container > div {
-  background-color: rgba(49, 49, 49, 0.8);
   text-align: center;
   padding: 25px 0;
   color: aliceblue;
@@ -110,59 +97,23 @@
 #maisMenos {
   font-size: 10px;
 }
-#output {
-  background-color: #1f1f1c;
-}
 #laranja {
   background-color: #d35704;
 }
 #cinzaClaro {
   background-color: #757575;
 }
-.navbar {
-  justify-content: flex-start;
-  padding: 0;
-}
-.container {
+.element-distance {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
+  align-items: center;
+  background-color: brown;
+  padding: 10%;
 }
-.logo {
-  align-content: flex-start;
-  width: 50px;
-  height: 50px;
-}
-.menu {
-  /* background-color: rgba(222, 184, 135, 0); */
-  flex-grow: 3;
-  margin-top: 0.5rem;
-}
-li a {
-  list-style-type: none;
-  padding: 20px;
-  color: rgb(152, 153, 155);
-  text-decoration: none;
-  width: auto;
-}
-ul {
-  display: flex;
-  list-style-type: none;
-  width: auto;
-}
-li a:hover {
-  color: aliceblue;
-}
+
 @media (max-width: 960px) {
-  .container {
+  .element-distance {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-  }
-  .logo {
-    align-content: flex-start;
-  }
-  li a {
-    padding: 6.5px;
   }
 }
