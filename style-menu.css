@@ -43,4 +43,28 @@ li a:hover {
   li a {
     padding: 6.5px;
   }
+  footer{
+    text-align: center;
+    font-style: italic;
+    padding:0px;
+  }
+}
+.head{
+  text-align: center;
+  padding: 20px;
+}
+.colaboradores{
+  display: flex;
+  justify-content:space-evenly;
+  padding: 0px;
+}
+.col{
+  text-align: center;
+  margin: 15px;
+}
+footer{
+  text-align: center;
+  font-style: italic;
+  padding:40px;
+  margin: 10px;
 }
